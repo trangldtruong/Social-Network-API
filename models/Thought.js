@@ -8,14 +8,18 @@ const Thought = new userThought ({
     },
     createdAt: {
         type: Date,
+        //Set default value to the current timestamp
+
+        //Use a getter method to format the timestamp on query
 
     },
     username: {
         type: String,
-        requred: true
+        requred: true,
     },
     reactions: {
-
+        //Array of nested documents created with the reactionSchema
+        
     }
 }
 );

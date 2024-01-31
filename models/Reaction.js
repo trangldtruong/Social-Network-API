@@ -1,6 +1,8 @@
 const Reaction = new socialReaction ({
     reactionId: {
+       // Use Mongoose's ObjectId data type
 
+        //Default value is set to a new ObjectId
     },
 
     reactionBody: {
@@ -16,7 +18,9 @@ const Reaction = new socialReaction ({
 
     createdAt: {
         type: Date,
+//Set default value to the current timestamp
 
+//Use a getter method to format the timestamp on query
     }
 }
 );
