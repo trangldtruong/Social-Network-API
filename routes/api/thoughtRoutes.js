@@ -7,14 +7,10 @@ const {
     deleteThought,
 } = require('../../controllers/thoughtController.js')
 
-//get all thoughts
-//post to create a new thought
-
+// /api/thoughts
 router.route('/').get(getThoughts).post(createThought);
 
-//get a thought by id
-//put to update a thought by id
-//delete to remove a thought by id
+// /api/thoughts/:thoughtId
 router
   .route('/:thoughtId')
   .get(getSingleThought)

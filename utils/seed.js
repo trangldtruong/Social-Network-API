@@ -1,6 +1,7 @@
 const connection = require('../config/connection');
 const { User, Thought, Reaction } = require('../models')
-const 
+
+connection.on('error', (err) => err);
 
 
 {
