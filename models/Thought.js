@@ -10,12 +10,9 @@ const thoughtSchema = new Schema ({
         maxlength: 128,   
     },
     createdAt: {
-        type: Date,
         //Set default value to the current timestamp
+        type: Date,
         default: Date.now
-
-        //Use a getter method to format the timestamp on query
-
     },
     username: {
         type: String,
@@ -26,6 +23,7 @@ const thoughtSchema = new Schema ({
 
     
 },
+//Use a getter method to format the timestamp on query
 {
     toJSON: { 
         getters: true
@@ -35,7 +33,7 @@ const thoughtSchema = new Schema ({
 );
 thoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length
-})
+});
 // Initialize our User model
-const Thought = model('Thought', thoughtSchema);
+const Thought = model('thought', thoughtSchema);
 module.exports = Thought;
