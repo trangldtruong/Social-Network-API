@@ -14,7 +14,7 @@ SO THAT my website can handle large amounts of unstructured data
 ```
 
 ## Visual
-a walk throught video can be found at 
+a walk throught video can be found at C:\Users\trang\bootcamp\Social-Network-API\assets\walkthrough.mp4
 
 ## License 
 MIT
