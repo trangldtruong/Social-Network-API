@@ -10,7 +10,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Get a thought
+  // Get a thought by its id
   async getSingleThought(req, res) {
     try {
       const thought = await Thought.findOne({ _id: req.params.thoughtId })
@@ -25,7 +25,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Create a thought
+  // Create/post a new thought
   async createThought(req, res) {
     try {
       const thought = await Thought.create(req.body);
@@ -50,7 +50,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Update a thought
+  //put to Update a thought by its id
   async updateThought(req, res) {
     try {
       const thought = await Thought.findOneAndUpdate(
@@ -69,3 +69,7 @@ module.exports = {
     }
   },
 };
+//`POST` to create a reaction stored in a single thought's reactions array field
+
+
+// `DELETE` to pull and remove a reaction by the reaction's reactionId value

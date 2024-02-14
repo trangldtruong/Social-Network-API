@@ -1,9 +1,10 @@
 # Social-Network-API
 
 ## Description 
-build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. You’ll use Express.js for routing, a MongoDB database, and the Mongoose ODM
+This project aims to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. You’ll use Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
 ## Usage
+Application serves as a social network API. Users can share thoughts, react to other people thoughts, add or remove friends from their friendlist
 
 ## User Story
 ```md
@@ -13,8 +14,10 @@ SO THAT my website can handle large amounts of unstructured data
 ```
 
 ## Visual
+a walk throught video can be found at 
 
 ## License 
 MIT
 
 ## Contribution
+Please clone the project with you key at https://github.com/trangldtruong/Social-Network-API and make any improvement to the code base. 

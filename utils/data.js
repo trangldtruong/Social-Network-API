@@ -91,6 +91,7 @@ const thoughts = [
   'Firefox is great for privacy',
 ];
 
+const genRandomIndex = (arr) => Math.floor(Math.random() * arr.length);
 
 // Get a random item given an array
 const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -111,4 +112,4 @@ const getRandomThought = (int) => {
 };
 
 // Export the functions for use in seed.js
-module.exports = { getRandomName, getRandomThought };
+module.exports = { getRandomName, getRandomThought, genRandomIndex };
